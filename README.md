@@ -6,11 +6,11 @@ did, using a simple Graph Neural Network.
 
 ## Files
 
-- `data.py` — makes a fake social network and generates labels
-- `model.py` — the GNN model (written from scratch using numpy)
-- `main.py` — run this file, it does everything (train + test + save results)
-- `requirements.txt` — packages you need to install
-- `model_weights.npz` — the trained model, created after you run main.py
+- `data.py` - makes a fake social network and generates labels
+- `model.py` - the GNN model (written from scratch using numpy)
+- `main.py` - run this file, it does everything (train + test + save results)
+- `requirements.txt` - packages you need to install
+- `model_weights.npz` - the trained model, created after you run main.py
 
 ## How to run it
 
