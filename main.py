@@ -57,7 +57,6 @@ def main():
     full_proba = [full.forward(i, h)[0] for i, h in zip(test_inst, test_hand)]
     full_metrics = evaluate(y_test, full_proba)
 
-    print("\nTest set results")
     for name, m in [("Logistic Regression", lr_metrics),
                      ("Plain GCN", plain_metrics),
                      ("Full model (GCN + handcrafted)", full_metrics)]:
@@ -67,7 +66,6 @@ def main():
     plt.plot(losses)
     plt.xlabel("epoch"); plt.ylabel("train BCE loss"); plt.title("Full model training curve")
     plt.tight_layout(); plt.savefig("training_curve.png", dpi=130)
-    print("\nSaved training_curve.png")
 
 
 if __name__ == "__main__":
