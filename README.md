@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 2. Run the code:
 ```
-python3 main.py
+python main.py
 ```
 
 That's it. It will print out the results and save two files:
