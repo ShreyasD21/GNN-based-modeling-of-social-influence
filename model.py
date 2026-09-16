@@ -24,12 +24,10 @@ class GNNModel:
                       ["W1", "b1", "W2", "b2", "W3", "b3", "W4", "b4"]}
 
     def save_weights(self, path):
-        """Save all trained parameters to a .npz file (deliverable: trained model weights)."""
         np.savez(path, W1=self.W1, b1=self.b1, W2=self.W2, b2=self.b2,
                  W3=self.W3, b3=self.b3, W4=self.W4, b4=self.b4)
 
     def load_weights(self, path):
-        """Load previously-saved parameters produced by save_weights()."""
         d = np.load(path)
         self.W1, self.b1 = d["W1"], d["b1"]
         self.W2, self.b2 = d["W2"], d["b2"]
